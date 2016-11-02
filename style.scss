@@ -18,9 +18,11 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+background : url(bottom_right.jpg) bottom right no-repeat #ffffff;
+font : 8pt/11pt "Times New Roman", serif, georgia;
+color : #555753;
+margin : 0;
+padding : 0;
 }
 
 .container {
@@ -230,57 +232,187 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
+body {
+background : url(bottom_right.jpg) bottom right no-repeat #ffffff;
+font : 8pt/11pt "Times New Roman", serif, georgia;
+color : #555753;
+margin : 0;
+padding : 0;
 }
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+p {
+font : 8pt/11pt "Times New Roman", serif, georgia;
+margin-top : 0;
+text-align : left;
+margin-left : 10px;
 }
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+abbr {
+border : none;
 }
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
+a:link {
+font-weight : bold;
+text-decoration : none;
+color : #333333;
 }
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+a:visited {
+font-weight : bold;
+text-decoration : none;
+color : #555555;
 }
-
+a:hover, a:active {
+text-decoration : underline;
+color : #555555;
+}
+.page-wrapper {
+background : url(top_left.jpg) top left no-repeat transparent;
+padding : 0;
+margin : 0;
+width : 760px;
+padding-bottom : 100px;
+}
+.intro {
+background : url(intro_back.jpg) top left no-repeat transparent;
+margin-top : 133px;
+width : 253px;
+float : left;
+}
+header h1, header h2 {
+display : none;
+}
+.summary {
+width : 210px;
+margin-left : 15px;
+margin-top : 20px;
+}
+.summary p {
+font : 8pt bold 8pt/11pt "Times New Roman", serif, georgia;
+color : #000000;
+text-align : center;
+}
+.preamble {
+width : 210px;
+margin-left : 15px;
+margin-top : 25px;
+}
+.preamble h3 {
+background : url(en_hdr.gif) top center no-repeat transparent;
+width : 210px;
+height : 19px;
+margin-left : 5px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.preamble p {
+padding-left : 5px;
+font : 8pt/14pt "Times New Roman", serif, georgia;
+}
+.supporting {
+background : url(main_back.jpg) top left no-repeat transparent;
+position : relative;
+margin-left : 258px;
+top : 58px;
+width : 376px;
+padding-left : 25px;
+padding-top : 25px;
+}
+.explanation h3 {
+background : url(what_hdr.gif) top left no-repeat transparent;
+height : 11px;
+text-align : left;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.supporting p {
+width : 315px;
+text-align : left;
+}
+.explanation h3 {
+background : url(what_hdr.gif) top left no-repeat transparent;
+height : 11px;
+}
+.explanation {
+padding-bottom : 10px;
+}
+.participation {
+padding-bottom : 10px;
+}
+.benefits {
+padding-bottom : 10px;
+}
+.requirements {
+padding-bottom : 10px;
+}
+.participation h3 {
+background : url(part_hdr.gif) top left no-repeat transparent;
+height : 11px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.benefits h3 {
+background : url(ben_hdr.gif) top left no-repeat transparent;
+height : 11px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.requirements h3 {
+background : url(req_hdr.gif) top left no-repeat transparent;
+height : 13px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
 footer {
-  padding: 20px 0;
-  text-align: center;
+text-align : center;
+border-top : 1px solid #cccccc;
+}
+footer a:link, footer a:visited {
+margin-right : 20px;
+}
+.sidebar {
+margin-left : 645px;
+width : 125px;
+position : absolute;
+top : 110px;
+}
+.sidebar ul {
+margin-left : 10px;
+padding : 0;
+}
+.design-selection h3 {
+background : url(sel_des.gif) top left no-repeat transparent;
+height : 21px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.design-archives h3 {
+background : url(archives.gif) top left no-repeat transparent;
+height : 18px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.zen-resources h3 {
+background : url(resource.gif) top left no-repeat transparent;
+height : 11px;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden;
+}
+.sidebar li {
+line-height : 2.5ex;
+list-style-type : none;
+padding-top : 5px;
+margin-bottom : 5px;
+}
+.sidebar li a:link {
+color : #555555;
+}
+.sidebar li a:visited {
+color : #777777;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
